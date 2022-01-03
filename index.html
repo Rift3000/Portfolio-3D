@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/449908a2fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="20×20"
+      href="images/me-circle.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+
+    <main class="mooon">
+      <header>
+        <h1 class="font-weight-bold pb-5" style="font-size: 4rem">
+          Jason <br />
+          Williams
+        </h1>
+        <h3 class="pt-5">Welcome to my Portfolio!🌌</h3>
+      </header>
+
+      <section>
+        <h2>About Me 😎</h2>
+        <p>
+          I have an avid interest in all things related to Software Development,
+          Fintech and Web3.A lot of my time is spent programming and catching up
+          on the latest tech news. It is my firm belief that technology will
+          aide in furthering the development of my country. Web3 will help to
+          reshape the internet as we know it.
+        </p>
+      </section>
+
+      <section class="three">
+        <div id="projects" class="container-fluid bg-3 text-center">
+          <h1 class="margin">App Projects 📱</h1>
+          <br />
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/crypto1.jpg"
+                  alt="Crypto Currency App"
+                  width="150"
+                  height="250"
+                />
+                <p><strong>Coin Ticker</strong></p>
+                <p>
+                  This app allows users to select a currency and see the current
+                  conversion rate for the selected currency in BITCOIN, ETHERIUM
+                  AND LITECOIN
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCrypto"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/clima1.jpg"
+                  alt="Clima App"
+                  width="150"
+                  height="250"
+                />
+                <p><strong>Clima App</strong></p>
+                <p>
+                  An app that shows the current weather of your current location
+                  and also gives you the ability to see the weather conditions
+                  of any area
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalClima"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/todoey1.jpg"
+                  alt="San Francisco"
+                  width="150"
+                  height="250"
+                />
+                <p><strong>Todoey App</strong></p>
+                <p>
+                  An app that allows to add items to a list, remove items from
+                  the list and mark the item as done.
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalTodo"
+                    style="margin-top: 4.5%"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/destini1.jpg"
+                  alt="Destini App"
+                  width="120"
+                  height="250"
+                />
+                <p><strong>Destini App</strong></p>
+                <p>
+                  A story driven app where the choices you make determine the
+                  outcome.
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDestini"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/corona1.jpg"
+                  alt="Destini App"
+                  width="150"
+                  height="250"
+                />
+                <p><strong>COVID-19 Tracker</strong></p>
+                <p>
+                  An app that helps you to keep track of covid-19 cases and news
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCorona"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img
+                  src="images/flash1.jpg"
+                  alt="San Francisco"
+                  width="150"
+                  height="250"
+                />
+                <p><strong>FlashChat App</strong></p>
+                <p>
+                  A group chat app that allows you to sign up or login then talk
+                  with your friends
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalFlash"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Web Projects-->
+      <section class="three">
+        <div id="web" class="container-fluid text-center">
+          <h1 class="margin">Web Projects</h1>
+          <br />
+          <div class="row text-center">
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/newsApp.jpg"
+                  alt="Vue News"
+                  style="height: 18rem; width: 30rem"
+                />
+                <p><strong>VueJs News Web App</strong></p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalNewsApp"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/django-blog.jpg"
+                  alt="Django Blog"
+                  style="height: 18rem; width: 30rem"
+                />
+                <p><strong>Django Blog</strong></p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDjangoBlog"
+                  >
+                    See Video
+                  </button>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <section class="three">
+        <!-- Certificate Container (Grid) -->
+        <div id="certificates" class="container-fluid bg-1 text-center">
+          <h2 class="margin">Certificates</h2>
+          <br />
+          <div class="row text-center pt-1">
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/googleDigital.png"
+                  alt="Fundamentals of Digital Marketing"
+                  style="height: 360px; width: 30rem"
+                />
+                <p>
+                  <strong>The Fundamentals of Digital Marketing</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDMarketing"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/flutterDev.png"
+                  alt="Flutter Development"
+                  style="height: 360px; width: 30rem"
+                />
+                <p>
+                  <strong>Flutter Development BootCamp</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalFlutter"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <br />
+          <div class="row text-center">
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/designThinking.jpg"
+                  alt="Design Thinking"
+                  style="height: 360px"
+                />
+                <p>
+                  <strong>Design Thinking in 3 steps</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDesignThinking"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/prescence.jpg"
+                  alt="Creating a Professional Online Prescence"
+                  style="height: 360px"
+                />
+                <p>
+                  <strong>Creating a Professional Online Prescence</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProfessional"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="row text-center">
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/financialStatements.jpg"
+                  alt="Reading Financial Statements"
+                  style="height: 360px; width: 30rem"
+                />
+                <p style="color: black">
+                  <strong>Reading Financial Statements </strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalFinancial"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/SMC.jpg"
+                  alt="Creating a Social Media Marketing Campaign"
+                  style="height: 360px"
+                />
+                <p>
+                  <strong>Creating a Social Media Marketing Campaign </strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSocialC"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <div class="row text-center">
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/designThinking.jpg"
+                  alt="Design Thinking"
+                  style="height: 360px; width: 30rem"
+                />
+                <p>
+                  <strong>Design Thinking in 3 steps</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDesignThinking"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <img
+                  src="images/react.jpg"
+                  alt="Modern React with Redux"
+                  style="height: 360px; width: 30rem"
+                />
+                <p>
+                  <strong>Modern React with Redux</strong>
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalReact"
+                  >
+                    Enlarge
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="three">
+        <!-- Article Container (Grid) -->
+        <div id="articles" class="container-fluid bg-1 text-center">
+          <h2 class="margin">My Articles</h2>
+          <br />
+          <div class="row text-center pt-1">
+            <div class="col">
+              <div class="thumbnail">
+                <a
+                  href="https://jacenwriter.medium.com/how-to-get-tech-jobs-and-internships-in-jamaica-d9f2289f82d6"
+                  target="_blank"
+                >
+                  <img
+                    src="images/tech_jobs.jpg"
+                    alt="How to get Tech Jobs and Internships"
+                    style="height: 360px; width: 30rem"
+                  />
+                </a>
+                <p>
+                  <strong>How to get Tech Jobs and Internships</strong>
+                </p>
+                <div>
+                  <a
+                    href="https://jacenwriter.medium.com/how-to-get-tech-jobs-and-internships-in-jamaica-d9f2289f82d6"
+                    target="_blank"
+                  >
+                    <button type="button" class="btn btn-primary btn-lg">
+                      Link
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <a
+                  href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-from-jamaica-a84b6af9f9a7"
+                  target="_blank"
+                >
+                  <img
+                    src="images/crypto_buy.jpg"
+                    alt="How to Buy Crypto Currencies"
+                    style="height: 360px; width: 30rem"
+                  />
+                </a>
+                <p>
+                  <strong>How to Buy Crypto Currencies</strong>
+                </p>
+                <div>
+                  <div>
+                    <a
+                      href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-from-jamaica-a84b6af9f9a7"
+                      target="_blank"
+                    >
+                      <button type="button" class="btn btn-primary btn-lg">
+                        Link
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <br />
+          <div class="row text-center">
+            <div class="col">
+              <div class="thumbnail">
+                <a
+                  href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-from-jamaica-a84b6af9f9a7"
+                  target="_blank"
+                >
+                  <img
+                    src="images/crypto_stake.jpg"
+                    alt="How to Transfer Crypto to a Wallet"
+                    style="height: 360px; width: 30rem"
+                  />
+                </a>
+                <p>
+                  <strong
+                    >How to Transfer Crypto to a Wallet and Stake It</strong
+                  >
+                </p>
+                <a
+                  href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-from-jamaica-a84b6af9f9a7"
+                  target="_blank"
+                >
+                  <button type="button" class="btn btn-primary btn-lg">
+                    Link
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="thumbnail">
+                <a
+                  href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-on-pancakeswap-8da468b26005"
+                  target="_blank"
+                >
+                  <img
+                    src="images/crypto_pancake.jpg"
+                    alt="How to Transfer Crypto to a Wallet"
+                    style="height: 360px; width: 30rem"
+                  />
+                </a>
+                <p>
+                  <strong>How to Buy Crypto Currencies on PancakeSwap</strong>
+                </p>
+                <a
+                  href="https://jacenwriter.medium.com/how-to-buy-crypto-currencies-on-pancakeswap-8da468b26005"
+                  target="_blank"
+                >
+                  <button type="button" class="btn btn-primary btn-lg">
+                    Link
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote">
+        <h2 class="py-5 text-center">
+          "The Journey of a Thousand Miles begins with a Single Step"
+          <br /><i>-Lao Tzu</i>
+        </h2>
+      </section>
+
+      <section class="quote marge">
+        <h1 class="text-center fw-5 pb-5">Contact</h1>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <a href="mailto:jasonwilliamsr8@gmail.com" target="_blank"
+              ><h3 class="contact">
+                <i class="fas fa-envelope"><i> Email Me</i></i>
+              </h3></a
+            >
+          </div>
+          <div class="col-sm-4">
+            <a
+              href="https://www.linkedin.com/in/jason-williams-7056b3a6/"
+              target="_blank"
+              ><h3 class="contact">
+                <i class="fab fa-linkedin"><i> LinkedIn</i></i>
+              </h3></a
+            >
+          </div>
+          <div class="col-sm-4 pb-5">
+            <a
+              href="https://github.com/Rift3000?tab=repositories"
+              target="_blank"
+              ><h3 class="contact">
+                <i class="fab fa-github-square"><i> Github</i></i>
+              </h3></a
+            >
+          </div>
+        </div>
+        <h2 class="text-center fw-bold">Jason Williams 2021&#169;</h2>
+      </section>
+    </main>
+
+    <!-- App Projects-->
+    <!-- First Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalCrypto" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Coin Ticker</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/crypto.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalClima" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Clima</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/clima.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalTodo" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Todoey</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/todoey.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalDestini" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Destini</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/Destini.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalCorona" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">COVID-19 Tracker</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/Corona.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalFlash" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Flash Chat App</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/flash.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Web Projects Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalNewsApp" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">VueJs News Web App</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/news.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Web Projects Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalDjangoBlog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Django Blog</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video class="videofix" controls>
+                <source src="videos/Django-Blog.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalDMarketing" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">
+                Fundamentals of Digital Marketing
+              </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/googleDigital.png"
+                alt="Fundamentals of Digital Marketing"
+                style="height: 550px; border: 4px black dashed"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalFlutter" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Flutter Development BootCamp</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/flutterDev.png"
+                alt="Flutter Development BootCamp"
+                style="height: 550px; border: 4px black dashed"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalDesignThinking" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Design Thinking in 3 Steps</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/designThinking.jpg"
+                alt="Design Thinking"
+                style="height: 550px; border: 4px black dashed"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalProfessional" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">
+                Creating a Professional Online Prescence
+              </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/prescence.jpg"
+                alt="Creating a Professional Online Prescence"
+                style="height: 550px"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalFinancial" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Reading Financial Statements</h4>
+              <button type="button" class="btn-close" data-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/financialStatements.jpg"
+                alt="Reading Financial Statements"
+                style="height: 550px"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalReact" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">Modern React with Redux</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/react.jpg"
+                alt="Modern React with Redux"
+                style="height: 600px; width: 100%; border: 4px black dashed"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seventh Certificate Modal -->
+    <div class="container">
+      <div class="modal fade" id="modalSocialC" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title dark">
+                Creating a Social Media Marketing Campaign
+              </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" />
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <img
+                src="images/SMC.jpg"
+                alt="Creating a Social Media Marketing Campaign"
+                style="height: 600px"
+              />
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <span>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-success"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
