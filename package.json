@@ -1,12 +1,16 @@
 {
   "name": "myportfolio",
   "version": "0.0.0",
+  "homepage": "http://rift3000.github.io/Portfolio-3D",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "vite": "^2.6.4"
   },
   "dependencies": {

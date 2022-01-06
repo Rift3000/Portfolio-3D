@@ -49,7 +49,7 @@ window.onload = function() {
   const main = new THREE.Audio( listener );
   const songElement = document.getElementById( 'mozart' );
   //sound4.setMediaElementSource( utopiaElement );
-  main.setVolume( 0.5 );
+  main.setVolume(0.21);
   songElement.play();
 
 }
