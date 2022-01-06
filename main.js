@@ -4,6 +4,14 @@ import * as THREE from 'three';
 import { PointLight } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  // true for mobile device
+  alert("Please use PC for optimal viewing");
+}else{
+  // false for not mobile device
+}
+
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -11,6 +19,57 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector('#bg'),
 });
+
+//Audio
+
+//get element and play
+
+//const playButton = document.getElementById( 'playButton' );
+//playButton.addEventListener('click', start);
+
+// create a global audio source
+//const sound = new THREE.Audio( listener );
+
+// load a sound and set it as the Audio object's buffer
+
+window.onload = function() {
+  const listener = new THREE.AudioListener();
+  camera.add( listener );
+
+  /*
+  const audioLoader = new THREE.AudioLoader();
+  audioLoader.load( 'sounds/forest.ogg', function( buffer ) {
+	sound.setBuffer( buffer );
+	sound.setLoop( true );
+	sound.setVolume( 0.5 );
+	sound.play();
+  });
+  */
+
+  const main = new THREE.Audio( listener );
+  const songElement = document.getElementById( 'mozart' );
+  //sound4.setMediaElementSource( utopiaElement );
+  main.setVolume( 0.5 );
+  songElement.play();
+
+}
+
+//play sound when pressed
+
+/*
+function start() {
+
+  const listener = new THREE.AudioListener();
+  camera.add( listener );
+
+  const main = new THREE.Audio( listener );
+  const songElement = document.getElementById( 'mozart' );
+  //sound4.setMediaElementSource( utopiaElement );
+  main.setVolume( 0.5 );
+  songElement.play();
+} 
+*/
+
 
 //Our screen view
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -49,7 +108,7 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('images/space2.png');
 scene.background = spaceTexture;
 
 
@@ -65,24 +124,84 @@ const jason = new THREE.Mesh(
 scene.add(jason)
 
 
-// Moon
+// Planets
 
-const moonTexture = new THREE.TextureLoader().load('images/moon.jpg');
-const craterTexture = new THREE.TextureLoader().load('craterMoon.jpg');
+const venusTexture = new THREE.TextureLoader().load('images/venus.jpg');
+const venusCraterTexture = new THREE.TextureLoader().load('images/venusCrater.jpg');
 
-const moon = new THREE.Mesh(
+const venus = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
-    map: moonTexture,
-    normalMap: craterTexture, 
+    map: venusTexture,
+    normalMap: venusCraterTexture, 
   })
 );
 
-scene.add(moon)
+const earthTexture = new THREE.TextureLoader().load('images/earth.jpg');
+const earthCraterTexture = new THREE.TextureLoader().load('images/earthCrater.jpg');
 
-// Set
-moon.position.z = 30;
-moon.position.setX(-10);
+const earth = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 36, 36),
+  new THREE.MeshStandardMaterial({
+    map: earthTexture,
+    normalMap: earthCraterTexture, 
+  })
+);
+
+const moonTexture = new THREE.TextureLoader().load('images/moon.jpg');
+const moonCraterTexture = new THREE.TextureLoader().load('images/craterMoon.jpg');
+
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 20, 20),
+  new THREE.MeshStandardMaterial({
+    map: moonTexture,
+    normalMap: moonCraterTexture, 
+  })
+);
+
+
+const marsTexture = new THREE.TextureLoader().load('images/mars.jpg');
+const marsCraterTexture = new THREE.TextureLoader().load('images/marsCrater.jpg');
+
+const mars = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.MeshStandardMaterial({
+    map: marsTexture,
+    normalMap: marsCraterTexture, 
+  })
+);
+
+
+const jupiterTexture = new THREE.TextureLoader().load('images/jupiter.jpg');
+const jupiterCraterTexture = new THREE.TextureLoader().load('images/jupiterCrater.jpg');
+
+const jupiter = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 40, 40),
+  new THREE.MeshStandardMaterial({
+    map: jupiterTexture,
+    normalMap: jupiterCraterTexture, 
+  })
+);
+
+
+
+scene.add(venus,earth,moon,mars,jupiter)
+
+// Position
+venus.position.z = 10;
+venus.position.setX(-4);
+
+earth.position.z = 24;
+earth.position.setX(-4);
+
+moon.position.z = 38;
+moon.position.setX(-4);
+
+mars.position.z = 55;
+mars.position.setX(-4);
+
+jupiter.position.z = 70;
+jupiter.position.setX(-4);
 
 jason.position.z = -5;
 jason.position.x = 2.5;
@@ -90,9 +209,25 @@ jason.position.x = 2.5;
 function moveCamera() {
 
   const t = document.body.getBoundingClientRect().top;
+  venus.rotation.x += 0.05;
+  venus.rotation.y += 0.0075;
+  venus.rotation.z += 0.05;
+
+  earth.rotation.x += 0.05;
+  earth.rotation.y += 0.0075;
+  earth.rotation.z += 0.05;
+
   moon.rotation.x += 0.05;
   moon.rotation.y += 0.0075;
   moon.rotation.z += 0.05;
+
+  mars.rotation.x += 0.05;
+  mars.rotation.y += 0.0075;
+  mars.rotation.z += 0.05;
+
+  jupiter.rotation.x += 0.05;
+  jupiter.rotation.y += 0.0075;
+  jupiter.rotation.z += 0.05;
 
   jason.rotation.y += -0.01;
   //jason.rotation.z += 0.01;
@@ -118,7 +253,15 @@ function animate() {
   
   jason.rotation.y += -0.002;
   
+  venus.rotation.x += 0.005;
+
+  earth.rotation.x += 0.005;
+
   moon.rotation.x += 0.005;
+
+  mars.rotation.x += 0.005;
+
+  jupiter.rotation.x += 0.005;
 
   //scene interaction continued
   //controls.update();
